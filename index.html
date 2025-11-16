@@ -10,25 +10,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" xintegrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         body {
             font-family: 'Inter', sans-serif;
         }
     </style>
 </head>
-<body class="bg-gray-100 text-gray-800 antialiased">
+<body class="bg-slate-50 text-gray-800 antialiased">
 
     <!-- Ana İçerik Alanı -->
     <div class="container mx-auto max-w-4xl p-4 sm:p-8">
         
         <!-- Başlık ve Profil Kartı -->
-        <header class="bg-white shadow-2xl rounded-2xl p-8 mb-8 text-center transition-all duration-300 hover:shadow-lg">
+        <header class="bg-white shadow-2xl rounded-2xl p-8 mb-8 text-center transition-all duration-300 hover:shadow-indigo-100">
             <!-- Profil Resmi Placeholder -->
             <img src="https://placehold.co/150x150/64748b/f8fafc?text=Y%C4%B1lmaz+%C3%96zdil+Portresi" 
                  alt="Yılmaz Özdil portresi [placeholder]"
-                 class="w-36 h-36 rounded-full mx-auto mb-6 border-4 border-indigo-200 shadow-lg">
+                 class="w-36 h-36 rounded-full mx-auto mb-6 border-4 border-indigo-200 shadow-lg ring-4 ring-indigo-300 ring-offset-2">
             
-            <h1 class="text-4xl sm:text-5xl font-bold text-indigo-800 mb-2">
+            <h1 class="text-4xl sm:text-5xl font-bold text-indigo-800 mb-2 bg-gradient-to-r from-indigo-700 to-purple-800 bg-clip-text text-transparent">
                 Yılmaz Özdil
             </h1>
             <p class="text-xl text-gray-600 font-light">
@@ -40,9 +42,10 @@
         <main class="space-y-8">
 
             <!-- Hayatı ve Kariyeri Bölümü -->
-            <section class="bg-white shadow-xl rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:shadow-lg">
-                <h2 class="text-2xl font-bold text-indigo-700 mb-4 pb-2 border-b border-gray-200">
-                    Hayatı ve Gazetecilik Kariyeri
+            <section class="bg-white shadow-xl rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 ease-in-out">
+                <h2 class="text-2xl font-bold text-indigo-700 mb-4 pb-2 border-b border-gray-200 flex items-center space-x-3">
+                    <i class="fa-solid fa-user-tie w-6 text-center text-indigo-500"></i>
+                    <span>Hayatı ve Gazetecilik Kariyeri</span>
                 </h2>
                 <div class="space-y-4 text-gray-700 leading-relaxed">
                     <p>
@@ -58,22 +61,24 @@
             </section>
 
             <!-- Fotoğraf Galerisi Bölümü -->
-            <section class="bg-white shadow-xl rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:shadow-lg">
-                <h2 class="text-2xl font-bold text-indigo-700 mb-4 pb-2 border-b border-gray-200">
-                    Fotoğraf Galerisi
+            <section class="bg-white shadow-xl rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 ease-in-out">
+                <h2 class="text-2xl font-bold text-indigo-700 mb-4 pb-2 border-b border-gray-200 flex items-center space-x-3">
+                    <i class="fa-solid fa-camera-retro w-6 text-center text-indigo-500"></i>
+                    <span>Fotoğraf Galerisi</span>
                 </h2>
                 <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
                     <!-- Gerçek resimler bu placeholder'lar ile değiştirilebilir -->
-                    <img src="https://placehold.co/400x300/64748b/f8fafc?text=Y%C4%B1lmaz+%C3%96zdil+Foto%C4%9Fraf+1" alt="Yılmaz Özdil Fotoğraf 1 [placeholder]" class="rounded-lg shadow-md aspect-video object-cover transition-transform duration-300 hover:scale-105">
-                    <img src="https://placehold.co/400x300/64748b/f8fafc?text=Y%C4%B1lmaz+%C3%96zdil+Foto%C4%9Fraf+2" alt="Yılmaz Özdil Fotoğraf 2 [placeholder]" class="rounded-lg shadow-md aspect-video object-cover transition-transform duration-300 hover:scale-105">
-                    <img src="https://placehold.co/400x300/64748b/f8fafc?text=Y%C4%B1lmaz+%C3%96zdil+Foto%C4%9Fraf+3" alt="Yılmaz Özdil Fotoğraf 3 [placeholder]" class="rounded-lg shadow-md aspect-video object-cover transition-transform duration-300 hover:scale-105 hidden sm:block">
+                    <img src="https://placehold.co/400x300/64748b/f8fafc?text=Y%C4%B1lmaz+%C3%96zdil+Foto%C4%9Fraf+1" alt="Yılmaz Özdil Fotoğraf 1 [placeholder]" class="rounded-xl shadow-lg aspect-video object-cover transition-transform duration-300 hover:scale-105 cursor-pointer">
+                    <img src="https://placehold.co/400x300/64748b/f8fafc?text=Y%C4%B1lmaz+%C3%96zdil+Foto%C4%9Fraf+2" alt="Yılmaz Özdil Fotoğraf 2 [placeholder]" class="rounded-xl shadow-lg aspect-video object-cover transition-transform duration-300 hover:scale-105 cursor-pointer">
+                    <img src="https://placehold.co/400x300/64748b/f8fafc?text=Y%C4%B1lmaz+%C3%96zdil+Foto%C4%9Fraf+3" alt="Yılmaz Özdil Fotoğraf 3 [placeholder]" class="rounded-xl shadow-lg aspect-video object-cover transition-transform duration-300 hover:scale-105 hidden sm:block cursor-pointer">
                 </div>
             </section>
 
             <!-- Yazarlık Tarzı Bölümü -->
-            <section class="bg-white shadow-xl rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:shadow-lg">
-                <h2 class="text-2xl font-bold text-indigo-700 mb-4 pb-2 border-b border-gray-200">
-                    Üslubu ve Görüşleri
+            <section class="bg-white shadow-xl rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 ease-in-out">
+                <h2 class="text-2xl font-bold text-indigo-700 mb-4 pb-2 border-b border-gray-200 flex items-center space-x-3">
+                    <i class="fa-solid fa-pen-nib w-6 text-center text-indigo-500"></i>
+                    <span>Üslubu ve Görüşleri</span>
                 </h2>
                 <p class="text-gray-700 leading-relaxed">
                     Yılmaz Özdil, yazılarında genellikle sert ve polemikçi bir dil kullanır. Güncel siyasi olayları, toplumsal değişimleri ve tarihi konuları kendi bakış açısıyla, genellikle iğneleyici ve satirik bir dille ele alır. Atatürk ilkeleri, cumhuriyet değerleri ve laiklik konularında tavizsiz bir savunucudur. Bu duruşu, ona hem çok sadık bir okur kitlesi kazandırmış hem de sık sık sert eleştirilerin hedefi yapmıştır.
@@ -81,65 +86,66 @@
             </section>
 
             <!-- Başlıca Eserleri Bölümü -->
-            <section class="bg-white shadow-xl rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:shadow-lg">
-                <h2 class="text-2xl font-bold text-indigo-700 mb-4 pb-2 border-b border-gray-200">
-                    Başlıca Eserleri (Kitapları)
+            <section class="bg-white shadow-xl rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 ease-in-out">
+                <h2 class="text-2xl font-bold text-indigo-700 mb-4 pb-2 border-b border-gray-200 flex items-center space-x-3">
+                    <i class="fa-solid fa-book-open w-6 text-center text-indigo-500"></i>
+                    <span>Başlıca Eserleri (Kitapları)</span>
                 </h2>
                 <p class="text-gray-700 leading-relaxed mb-6">
                     Köşe yazılarının yanı sıra, Türkiye'de satış rekorları kıran çok sayıda kitaba imza atmıştır. Bu kitaplar genellikle deneme, araştırma veya tarihi anlatı türündedir.
                 </p>
                 <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <!-- Kitap Kartları -->
-                    <li class="bg-indigo-50 p-4 rounded-lg shadow-inner flex items-center space-x-4 transition-all duration-300 hover:bg-indigo-100">
+                    <li class="bg-indigo-50 p-4 rounded-lg shadow-inner flex items-center space-x-4 transition-all duration-300 hover:bg-indigo-100 hover:scale-[1.03] transform">
                         <img src="https://placehold.co/100x150/e0e7ff/3730a3?text=Kapak+Resmi" alt="İsim, Şehir, Hayvan Kapak Resmi [placeholder]" class="w-16 h-24 rounded-md shadow-sm object-cover flex-shrink-0">
                         <div>
                             <span class="font-bold text-indigo-900">İsim, Şehir, Hayvan</span>
                             <span class="text-sm text-gray-600 block">(2011)</span>
                         </div>
                     </li>
-                    <li class="bg-indigo-50 p-4 rounded-lg shadow-inner flex items-center space-x-4 transition-all duration-300 hover:bg-indigo-100">
+                    <li class="bg-indigo-50 p-4 rounded-lg shadow-inner flex items-center space-x-4 transition-all duration-300 hover:bg-indigo-100 hover:scale-[1.03] transform">
                         <img src="https://placehold.co/100x150/e0e7ff/3730a3?text=Kapak+Resmi" alt="İsim, Şehir, Bitki Kapak Resmi [placeholder]" class="w-16 h-24 rounded-md shadow-sm object-cover flex-shrink-0">
                         <div>
                             <span class="font-bold text-indigo-900">İsim, Şehir, Bitki</span>
                             <span class="text-sm text-gray-600 block">(2012)</span>
                         </div>
                     </li>
-                    <li class="bg-indigo-50 p-4 rounded-lg shadow-inner flex items-center space-x-4 transition-all duration-300 hover:bg-indigo-100">
+                    <li class="bg-indigo-50 p-4 rounded-lg shadow-inner flex items-center space-x-4 transition-all duration-300 hover:bg-indigo-100 hover:scale-[1.03] transform">
                         <img src="https://placehold.co/100x150/e0e7ff/3730a3?text=Kapak+Resmi" alt="Beraber Yürüdük Biz Bu Yıllarda Kapak Resmi [placeholder]" class="w-16 h-24 rounded-md shadow-sm object-cover flex-shrink-0">
                         <div>
                             <span class="font-bold text-indigo-900">Beraber Yürüdük Biz Bu Yıllarda</span>
                             <span class="text-sm text-gray-600 block">(2014)</span>
                         </div>
                     </li>
-                    <li class="bg-indigo-50 p-4 rounded-lg shadow-inner flex items-center space-x-4 transition-all duration-300 hover:bg-indigo-100">
+                    <li class="bg-indigo-50 p-4 rounded-lg shadow-inner flex items-center space-x-4 transition-all duration-300 hover:bg-indigo-100 hover:scale-[1.03] transform">
                         <img src="https://placehold.co/100x150/e0e7ff/3730a3?text=Kapak+Resmi" alt="Adam Kapak Resmi [placeholder]" class="w-16 h-24 rounded-md shadow-sm object-cover flex-shrink-0">
                         <div>
                             <span class="font-bold text-indigo-900">Adam</span>
                             <span class="text-sm text-gray-600 block">(2017)</span>
                         </div>
                     </li>
-                    <li class="bg-indigo-50 p-4 rounded-lg shadow-inner flex items-center space-x-4 transition-all duration-300 hover:bg-indigo-100">
+                    <li class="bg-indigo-50 p-4 rounded-lg shadow-inner flex items-center space-x-4 transition-all duration-300 hover:bg-indigo-100 hover:scale-[1.03] transform">
                         <img src="https://placehold.co/100x150/e0e7ff/3730a3?text=Kapak+Resmi" alt="Kadın Kapak Resmi [placeholder]" class="w-16 h-24 rounded-md shadow-sm object-cover flex-shrink-0">
                         <div>
                             <span class="font-bold text-indigo-900">Kadın</span>
                             <span class="text-sm text-gray-600 block">(2018)</span>
                         </div>
                     </li>
-                    <li class="bg-indigo-50 p-4 rounded-lg shadow-inner flex items-center space-x-4 transition-all duration-300 hover:bg-indigo-100">
+                    <li class="bg-indigo-50 p-4 rounded-lg shadow-inner flex items-center space-x-4 transition-all duration-300 hover:bg-indigo-100 hover:scale-[1.03] transform">
                         <img src="https://placehold.co/100x150/e0e7ff/3730a3?text=Kapak+Resmi" alt="Mustafa Kemal Kapak Resmi [placeholder]" class="w-16 h-24 rounded-md shadow-sm object-cover flex-shrink-0">
                         <div>
                             <span class="font-bold text-indigo-900">Mustafa Kemal</span>
                             <span class="text-sm text-gray-600 block">(2018)</span>
                         </div>
                     </li>
-                    <li class="bg-indigo-50 p-4 rounded-lg shadow-inner flex items-center space-x-4 transition-all duration-300 hover:bg-indigo-100">
+                    <li class="bg-indigo-50 p-4 rounded-lg shadow-inner flex items-center space-x-4 transition-all duration-300 hover:bg-indigo-100 hover:scale-[1.03] transform">
                         <img src="https://placehold.co/100x150/e0e7ff/3730a3?text=Kapak+Resmi" alt="Son Cüret Kapak Resmi [placeholder]" class="w-16 h-24 rounded-md shadow-sm object-cover flex-shrink-0">
                         <div>
                             <span class="font-bold text-indigo-900">Son Cüret</span>
                             <span class="text-sm text-gray-600 block">(2020)</span>
                         </div>
                     </li>
-                     <li class="bg-indigo-50 p-4 rounded-lg shadow-inner flex items-center space-x-4 transition-all duration-300 hover:bg-indigo-100">
+                     <li class="bg-indigo-50 p-4 rounded-lg shadow-inner flex items-center space-x-4 transition-all duration-300 hover:bg-indigo-100 hover:scale-[1.03] transform">
                         <img src="https://placehold.co/100x150/e0e7ff/3730a3?text=Kapak+Resmi" alt="Anka Kuşu Kapak Resmi [placeholder]" class="w-16 h-24 rounded-md shadow-sm object-cover flex-shrink-0">
                         <div>
                             <span class="font-bold text-indigo-900">Anka Kuşu</span>
@@ -155,7 +161,7 @@
         </main>
 
         <!-- Footer -->
-        <footer class="text-center text-gray-500 mt-12 mb-6 text-sm">
+        <footer class="text-center text-gray-500 mt-12 mb-6 text-sm border-t border-gray-200 pt-8">
             <p>Bu sayfa, Yılmaz Özdil hakkında genel bilgiler sunmak amacıyla oluşturulmuştur.</p>
             <p>&copy; 2025 - Bilgilendirme Sayfası</p>
         </footer>
