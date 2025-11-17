@@ -1,2 +1,1 @@
-# Yilmazozdil
-Yılmaz Özdil
+BAŞARIYA ULAŞIYORUM
